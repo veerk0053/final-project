@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #242424;
+    height: 100vh;
+    padding: 20px;
+}
+
+.landing {
+    background-image: url('../img/bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio {
+    background-image: url('../img/pawel-czerwinski-Eru5-VMQZT8-unsplash2.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about {
+    background-image: url('../img/pawel-czerwinski-Eru5-VMQZT8-unsplash2.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-container {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    margin-right: 10px;
+    width: 30%;
+    height: auto;
+}
+
+.mainlogo {
+    filter: invert(1);
+}
+
+.rotatinglogo {
+    filter: invert(1);
+    animation: rotatelogo 5s ease infinite;
+}
+
+@keyframes rotatelogo {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo-container img:last-child {
+    margin-right: 0;
+    /* Removes margin from the last image */
+}
+
+.mainlogo2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-top: -5rem;
+    filter: invert(1);
+}
+
+/* NAV  */
+
+.nav2 {
+    padding: 1rem;
+}
+
+.mininav {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.mininav:hover {
+    transform: scale(2px);
+    color: #d3d3d3;
+}
+
+.nav2 a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+
+.navbar {
+    background-color: #a3a3a313;
+    border-radius: 20px;
+    margin-top: -3rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 40px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.5s ease;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+nav ul li a:hover {
+    color: #8e8e8e;
+}
+
+.sec1 {
+    margin-bottom: -10rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+
+
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    height: 600px;
+    /* Adjust height based on your design preference */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.carousel-images {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures images cover the container while maintaining aspect ratio */
+    position: absolute;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-text {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.carousel-text p {
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-control.left {
+    left: 10px;
+    transition: 0.5s ease;
+}
+
+.carousel-control.left:hover {
+    background-color: rgba(55, 55, 55, 0.331);
+    color: white;
+}
+
+.carousel-control.right {
+    right: 10px;
+    transition: 0.5s ease;
+}
+
+.carousel-control.right:hover {
+    background-color: rgba(200, 200, 200, 0.331);
+    color: black;
+}
+
+
+.sec2 {
+    margin-top: -5rem;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.logo1 {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+    filter: invert(1);
+    margin-left: 20rem;
+}
+
+.logo2 {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+    filter: invert(1);
+    margin-left: 20rem;
+}
+
+.halflogo {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 22rem;
+}
+
+.logo4 {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+    filter: invert(1);
+    margin-left: 23rem;
+}
+
+.text {
+    text-align: left;
+    margin-right: 20rem;
+}
+
+.text h2 {
+    color: whitesmoke;
+}
+
+.text p {
+    color: whitesmoke;
+    margin-top: 1rem;
+}
+
+.text2 {
+    text-align: left;
+    margin-right: 22rem;
+}
+
+.text2 h2 {
+    color: whitesmoke;
+}
+
+.text2 p {
+    color: whitesmoke;
+    margin-top: 1rem;
+}
+
+.text3 {
+    text-align: left;
+    margin-right: 15rem;
+}
+
+.text3 h2 {
+    color: whitesmoke;
+}
+
+.text3 p {
+    color: whitesmoke;
+    margin-top: 1rem;
+}
+
+.text4 {
+    text-align: left;
+    margin-right: 19.5rem;
+}
+
+.text4 h2 {
+    color: whitesmoke;
+}
+
+.text4 p {
+    color: whitesmoke;
+    margin-top: 1rem;
+}
+
+
+.sec3 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image img {
+        margin: 0 0 20px 0;
+    }
+}
+
+/* Splash Screen */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Rotating Image */
+#rotating-image {
+    width: 150px;
+    height: 150px;
+    filter: invert(1);
+    animation: rotate 2s ease infinite;
+}
+
+/* Keyframes for Rotation */
+@keyframes rotate {
+    0% {
+        transform: rotate(60deg);
+        transform: scale(0%);
+    }
+
+    20% {
+        transform: scale(120%);
+    }
+
+    30% {
+        transform: scale(100%);
+        transform: rotate(720deg);
+    }
+
+    50% {
+        transform: rotate(720deg);
+    }
+
+    80% {
+        transform: rotate(360deg);
+    }
+
+    85% {
+        transform: scale(100%);
+    }
+
+    90% {
+        transform: scale(120%);
+    }
+
+    100% {
+        transform: scale(0%);
+    }
+}
+
+
+.main-content {
+    padding: 50px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.main-content h1,
+p {
+    color: rgb(235, 235, 235);
+}
+
+.aboutme {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+footer {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+
+.social-icon {
+    margin: 0 0.5rem;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.social-icon2 {
+    margin: 0 0.5rem;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.social-icon:hover {
+    color: rgb(199, 199, 199);
+}
+
+.social-icon2:hover {
+    color: rgb(97, 97, 97);
+}
+
+
+.music {
+    margin-top: 2rem;
+}
+
+.links {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.links iframe {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.links iframe:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.links div {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    text-align: center;
+    font-size: 12px;
+    color: #555555;
+}
+
+.links a {
+    color: #0070c9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #005bb5;
+}
+
+
+.pdf {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+    margin-top: 2rem;
+}
+
+.pdf:hover {
+    color: rgb(201, 202, 255);
+}
+
+.copyright {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 2rem;
+}
